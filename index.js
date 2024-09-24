@@ -21,6 +21,10 @@ app.use(
   })
 );
 
+app.get("/", (req, res)=>{
+  res.send("nc server running");
+});
+
 app.use("/api", authRouter);
 app.use("/api", mailRouter);
 app.use("/api", excelRouter);
