@@ -17,7 +17,7 @@ const sendMail = async (req, res) => {
     let MailGenerator = new Mailgen({
       theme: "default",
       product: {
-        name: "Become",
+        name: "Team Nomencapture, Become",
         link: "https://mailgen.js/",
       },
     });
@@ -27,7 +27,7 @@ const sendMail = async (req, res) => {
         name: userName, // it will show Hi with this name as heading
         intro: userMailMessage, // message after heading
         outro:
-          "Need help, or have questions? Just ask your query to this mail ink@become.team, sam@become.team", // end it will be written like this
+          "Have questions? Feel free to mail us at sam@become.team or ink@become.team.", // end it will be written like this
       },
     };
 
@@ -87,7 +87,7 @@ const notifyUser = async (req, res) => {
     let MailGenerator = new Mailgen({
       theme: "default",
       product: {
-        name: "Become",
+        name: "Team Nomencapture, Become",
         link: "https://mailgen.js/",
       },
     });
@@ -97,7 +97,7 @@ const notifyUser = async (req, res) => {
         name: userName, // it will show Hi with this name as heading
         intro: userMailMessage, // message after heading
         outro:
-          "Need help, or have questions? Just ask your query to this mail ink@become.team, sam@become.team", // end it will be written like this
+          "Have questions? Feel free to mail us at sam@become.team or ink@become.team.", // end it will be written like this
       },
     };
 
